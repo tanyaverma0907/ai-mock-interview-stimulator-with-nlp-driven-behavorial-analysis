@@ -212,7 +212,7 @@ const Dashboard = () => {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">
             Performance{" "}
-            <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
               Analytics
             </span>
           </h1>
@@ -227,7 +227,7 @@ const Dashboard = () => {
             { label: "Avg Fluency",      val: avgFluency,    suffix: "%",   icon: "🎙️", color: "from-cyan-500/20 to-cyan-600/5",      border: "border-cyan-500/20" },
             { label: "Answers Given",    val: totalAnswered, suffix: "",    icon: "✍️", color: "from-amber-500/20 to-amber-600/5",   border: "border-amber-500/20" },
           ].map(s => (
-            <div key={s.label} className={`rounded-2xl border ${s.border} bg-gradient-to-br ${s.color} p-5 backdrop-blur-sm`}>
+            <div key={s.label} className={`rounded-2xl border ${s.border} bg-linear-to-br ${s.color} p-5 backdrop-blur-sm`}>
               <div className="flex items-center justify-between mb-3">
                 <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">{s.label}</span>
                 <span className="text-xl">{s.icon}</span>
@@ -345,7 +345,7 @@ const Dashboard = () => {
                             </div>
                             <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
                               <div
-                                className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full"
+                                className="h-full bg-linear-to-r from-amber-500 to-orange-500 rounded-full"
                                 style={{ width: `${pct}%`, transition: "width 1s ease" }}
                               />
                             </div>
@@ -450,7 +450,7 @@ function HistoryCard({ iv, idx }: { iv: InterviewRecord; idx: number }) {
         onClick={() => setOpen(o => !o)}
       >
         <div
-          className="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0"
+          className="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0"
           style={{ background: `${color}22`, border: `1px solid ${color}44` }}
         >
           {ROLE_ICONS[iv.role] || "🎯"}
@@ -461,7 +461,7 @@ function HistoryCard({ iv, idx }: { iv: InterviewRecord; idx: number }) {
             {iv.questions.length} questions · {iv.answers.filter(a => a && a !== "SKIPPED").length} answered · {fmtDate(iv.createdAt)}
           </p>
         </div>
-        <div className="flex items-center gap-4 flex-shrink-0">
+        <div className="flex items-center gap-4 shrink-0">
           <div className="text-right hidden sm:block">
             <p className={`text-xl font-bold tabular-nums ${scoreColor(nlp?.overallScore ?? 0)}`}>
               {nlp?.overallScore ?? "—"}%
@@ -625,7 +625,7 @@ function InsightsTab({ interviews, loading }: { interviews: InterviewRecord[]; l
           <div className="space-y-2">
             {skippedQs.map(([q, count], i) => (
               <div key={i} className="flex items-start gap-3 rounded-xl bg-black/20 border border-white/5 p-3">
-                <span className="text-amber-500 text-xs font-bold mt-0.5 flex-shrink-0">{count}×</span>
+                <span className="text-amber-500 text-xs font-bold mt-0.5 shrink-0">{count}×</span>
                 <p className="text-sm text-gray-300">{q}</p>
               </div>
             ))}

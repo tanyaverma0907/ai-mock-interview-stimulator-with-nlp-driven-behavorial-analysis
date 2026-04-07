@@ -1,4 +1,3 @@
-// ─── AnalyticsPreview.tsx ─────────────────────────────────────────────────────
 export const AnalyticsPreview = () => {
   const bars = [
     { label: "Clarity",    val: 82, color: "#8b5cf6" },

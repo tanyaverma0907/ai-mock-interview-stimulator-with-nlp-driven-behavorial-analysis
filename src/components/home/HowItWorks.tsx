@@ -1,4 +1,3 @@
-// ─── HowItWorks.tsx ───────────────────────────────────────────────────────────
 export const HowItWorks = () => {
   const steps = [
     {

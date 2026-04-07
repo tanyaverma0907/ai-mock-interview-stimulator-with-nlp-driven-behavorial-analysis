@@ -49,7 +49,7 @@ const KEYWORDS: Record<string, string[]> = {
 // ─── Main analyzer ────────────────────────────────────────────────────────────
 export function analyzeAnswerNLP(
   answers:   string[],
-  questions: string[],
+  _questions: string[],
   role = "frontend"
 ): NLPResult {
   const validAnswers = answers.filter(a => a && a !== "SKIPPED" && a.trim().length > 0);

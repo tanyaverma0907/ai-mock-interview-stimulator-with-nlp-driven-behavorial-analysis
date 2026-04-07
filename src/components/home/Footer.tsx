@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-// ─── Footer.tsx ───────────────────────────────────────────────────────────────
 export const Footer = () => {
   const navigate = useNavigate();
 

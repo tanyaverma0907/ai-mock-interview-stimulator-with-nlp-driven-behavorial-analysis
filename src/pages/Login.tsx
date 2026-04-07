@@ -1,7 +1,7 @@
-import { useState }                                         from "react";
-import { useNavigate }                                       from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { auth }                                              from "../utils/firebase";
+import { auth } from "../utils/firebase";
 
 const googleProvider = new GoogleAuthProvider();
 

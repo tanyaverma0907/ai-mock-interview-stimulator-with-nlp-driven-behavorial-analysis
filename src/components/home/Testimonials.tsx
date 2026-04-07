@@ -1,4 +1,3 @@
-// ─── Testimonials.tsx ─────────────────────────────────────────────────────────
 export const Testimonials = () => {
   const testimonials = [
     {

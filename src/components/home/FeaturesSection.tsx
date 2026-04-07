@@ -1,4 +1,4 @@
-// ─── FeaturesSection.tsx ──────────────────────────────────────────────────────
+
 export const FeaturesSection = () => {
   const features = [
     {

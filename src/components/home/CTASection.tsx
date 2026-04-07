@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-// ─── CTASection.tsx ───────────────────────────────────────────────────────────
 export const CTASection = () => {
   const navigate = useNavigate();
 

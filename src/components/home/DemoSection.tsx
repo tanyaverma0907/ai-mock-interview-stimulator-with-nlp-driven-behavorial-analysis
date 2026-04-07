@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-// ─── DemoSection.tsx ──────────────────────────────────────────────────────────
 export const DemoSection = () => {
   const [activeQ, setActiveQ] = useState(0);
 

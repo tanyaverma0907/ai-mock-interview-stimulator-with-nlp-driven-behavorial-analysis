@@ -1,4 +1,3 @@
-// ─── AdvancedFeatures.tsx ─────────────────────────────────────────────────────
 export const AdvancedFeatures = () => {
   const features = [
     {

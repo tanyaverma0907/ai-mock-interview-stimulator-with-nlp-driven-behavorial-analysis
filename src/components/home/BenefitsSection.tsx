@@ -1,4 +1,3 @@
-// ─── BenefitsSection.tsx ──────────────────────────────────────────────────────
 export const BenefitsSection = () => {
   const benefits = [
     {
